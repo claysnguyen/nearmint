@@ -23,7 +23,7 @@ async function main() {
     const wallets = JSON.parse(readFileSync('near_wallets.json', 'utf-8'));
     const recipients = wallets.map(wallet => wallet.implicitAccountId);
 
-    const amountYoctoNEAR = utils.format.parseNearAmount("1");
+    const amountYoctoNEAR = utils.format.parseNearAmount("4");
 
     for (const recipient of recipients) {
         try {

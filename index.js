@@ -60,7 +60,7 @@ async function main() {
         }
     }
     // 10 次操作 是每个钱包都打10次
-    Promise.all(walletData.map(wallet => performInscribe(wallet, contractArgs, 9999)))
+    Promise.all(walletData.map(wallet => performInscribe(wallet, contractArgs, 699999)))
         .then(() => {
             console.log("所有操作完成");
         })
